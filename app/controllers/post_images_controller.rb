@@ -5,8 +5,8 @@ class PostImagesController < ApplicationController
 
   def create
     @post_image = current_user.post_images.build(post_image_params)
-  @post_image.save
-  redirect_to post_images_path
+    @post_image.save
+    redirect_to post_images_path
   end
 
   def index
